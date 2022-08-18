@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(../images/1-16.jpg) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    transition-property: background;
+    transition-delay: 1s;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+    width: 100%;
+}
+body:hover{
+    background: url(../images/1-15.jpg) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+body:hover .header_bg{
+    background-color: #000;
+}
+body:hover header{
+    border-bottom: 1px solid #000;
+}
+
+/*-------header--------*/
+
+header{
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid rgb(223,0,1);
+    transition: border 5s ease-in-out;
+    position: relative;
+}
+.header_bg{
+    background-color: rgba(223,0,1,0.3);
+    height: 60px;
+    transition: background 5s ease-in-out;
+}
+.nav{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0,0,0,0.7);
+}
+.menu{
+     width: 20%;
+    float: right;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    padding: 0;
+    z-index: 3;
+}
+.logo img{
+    width: 150px;
+    margin: 0;
+}
+.login tr td{
+    width: 50%;
+    padding: 0 10px;
+}
+.login input{
+    height: 23px;
+    background-color: #0000ff;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 3px 5px;
+    font-size: 15px;
+}
+
+.login input:hover{
+    background-color: #000099;
+    color: red;
+    cursor: pointer;
+
+}
+.menu tr{
+    height: 25px;
+}
+ td.border{
+    border-right: 2px solid #fff;
+}
+.buton:hover{
+    cursor: pointer;
+}
+
+/*----------section----------*/
+
+.content{
+    height: 500px;
+ }
+.left_content{
+    width: 49%;
+    display: inline-block;
+    height: 500px;
+    float: left;
+    opacity: 0.4;
+
+}
+.right_content{
+    width: 49%;
+    height: 500px;
+    position: absolute;
+    bottom: 230px;
+    right: 220px;
+    outline: 1px solid white;
+}
+.bg_gif{
+    position: relative;
+    top: 150px;
+    left: 30%;
+    display: inline-block;
+    width: 40%;
+}
+.left_content img{
+    width: 100%;
+    transform: perspective(200px) rotateY(20deg);
+    transform-origin: left;
+}
+#regform_div{
+    width: 300px;
+    min-height: 150px;
+    height: auto;
+    border: 1px solid rgba(0,0,255,0.6);
+    border-radius: 15px;
+    float: right;
+    margin-top: 20px;
+    position: absolute;
+    top: 110px;
+    right: 50px;
+}
+#logout_button{
+    background: #fff;
+    float: right;
+    display: inline-block;
+    margin: 3px 15px 0 0;
+
+}
+#logout_button button{
+    padding: 3px 10px;
+    background: #0000ff;
+    color: #9D0101;
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+#logout_button button:hover{
+    background: #9D0101;
+    color: #0000ff;
+    cursor: pointer;
+}
+.input{
+    width: 90%;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    
+}
+.buton{
+    width: 92%;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: aliceblue;
+    background-color: rgba(0,0,255,0.6);
+    border: none;
+}
+.activeeee{
+    border: 5px solid red;
+ 
+}
+.input::-webkit-input-placeholder{
+	background: rgba(255,255,255,0.1);
+	color: #333;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+#hidden_one{
+    width: 80%;
+    min-height: 150px;
+    height: auto;
+    background-color: rgba(255,255,255,0.2);
+    margin: 20px auto;
+    padding-bottom: 10px;
+
+}
+.registration-wrapper{
+    width: 100%;
+    min-height: 450px;
+    background: #000;
+}
+#hidden_two {
+    margin-left: 15px;
+    width: 300px;
+    margin: 20px auto;
+}
+.regform_signup .buton{
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+
+/*------------footer--------*/
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    bottom: 0;
+}
+.footer_text{
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    color: beige;
+}
+.song{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.login tr td input{
+    outline: 0;
+    border: 0;
+}
+/*personal page */
+
+#personal_page{
+    width: 100%;
+    min-height: 450px;
+    padding-top: 30px;
+    background: url(../images/body.png);
+}
+#logout{
+    padding: 5px;
+    background: #fga;
+    color: #fff;
+}
+input[name=img]{
+    width: 150px;
+    float: left;
+    margin-top: 2px;
+}
+form[name=edit_img] button{
+   outline: none;
+    border: none;
+    background: green;
+    color: #fff;
+    padding: 3px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+form[name=edit_img] button:hover{
+    background: #777;
+    color: red;
+}
+#edit_img{
+    display: none;   
+}
+#edit_button{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    display: none;
+}
+#profile_picture:hover #edit_button{
+    display: block;
+}
+#enter{
+    float: right;
+    padding: 10px 10px 0 0;
+}
+#enter button{
+    padding: 3px 5px;
+    background: rgba(179,4,12,0.6);
+    color: #fff;
+    outline: none;
+    border: none;
+}
+#enter button:hover{
+    background: rgba(0,0,255,0.6);
+    color: red;
+    cursor: pointer;
+}
+#logout:hover{
+    cursor: pointer;
+    background: red;
+}
+/* personal Page */
+#personal_page h1{
+    color: #fff;
+    font-size: 19px;
+    font-family: arial;
+    text-align: center;
+}
+#personal_card{
+    width: 40%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+}
+#profile_information{
+    display: inline-block;
+    width: 78%;
+    height: 100px;
+    float: right;
+}
+#profile_picture{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+#hidden_one #button{
+    width: 88%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    color: aliceblue;
+    background-color: rgba(179,4,12,0.6);
+    border: none;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
